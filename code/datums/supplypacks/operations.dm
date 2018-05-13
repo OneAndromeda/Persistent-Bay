@@ -10,6 +10,7 @@
 					/obj/item/weapon/storage/belt/utility/full,
 					/obj/item/taperoll/engineering,
 					/obj/item/weapon/storage/backpack/industrial,
+					/obj/item/clothing/accessory/armband/engine,
 					/obj/item/device/radio/headset/headset_eng)
 	cost = 12
 	containertype = /obj/structure/closet/secure_closet/engineering_personal
@@ -26,6 +27,7 @@
 					/obj/item/weapon/storage/belt/utility/atmostech,
 					/obj/item/taperoll/atmos,
 					/obj/item/weapon/storage/backpack/industrial,
+					/obj/item/clothing/accessory/armband/engine,
 					/obj/item/device/radio/headset/headset_eng)
 	cost = 15
 	containertype = /obj/structure/closet/secure_closet/atmos_personal
@@ -47,6 +49,7 @@
 					/obj/item/weapon/cartridge/ce,
 					/obj/item/clothing/cloak/ce,
 					/obj/item/weapon/storage/backpack/industrial,
+					/obj/item/clothing/accessory/armband/engine,
 					/obj/item/device/radio/headset/heads/ce)
 	cost = 50
 	containertype = /obj/structure/closet/secure_closet/engineering_chief
@@ -59,6 +62,7 @@
 					/obj/item/clothing/head/soft,
 					/obj/item/clothing/gloves/thick,
 					/obj/item/weapon/storage/backpack/dufflebag,
+					/obj/item/clothing/accessory/armband/cargo,
 					/obj/item/device/radio/headset/headset_cargo)
 	cost = 3
 	containertype = /obj/structure/closet/secure_closet/cargotech
@@ -77,6 +81,7 @@
 					/obj/item/weapon/shovel,
 					/obj/item/weapon/pickaxe,
 					/obj/item/clothing/suit/space/void/mining/prepared,
+					/obj/item/clothing/accessory/armband/cargo,
 					/obj/item/device/radio/headset/headset_cargo)
 	cost = 100
 	containertype = /obj/structure/closet/secure_closet/miner
@@ -185,6 +190,7 @@
 					/obj/item/clothing/under/rank/nursesuit,
 					/obj/item/clothing/head/nursehat,
 					/obj/item/weapon/storage/backpack/medic,
+					/obj/item/clothing/accessory/armband/med,
 					/obj/item/device/radio/headset/headset_med)
 	cost = 6
 	containertype = /obj/structure/closet/secure_closet/medical3
@@ -200,6 +206,7 @@
 					/obj/item/clothing/mask/breath/medical,
 					/obj/item/weapon/storage/firstaid/regular,
 					/obj/item/weapon/storage/backpack/satchel_med,
+					/obj/item/clothing/accessory/armband/med,
 					/obj/item/weapon/storage/backpack/messenger/med,
 					/obj/item/device/radio/headset/headset_med)
 	cost = 10
@@ -235,6 +242,7 @@
 					/obj/item/weapon/folder/white,
 					/obj/item/weapon/pen,
 					/obj/item/weapon/storage/backpack/messenger/med,
+					/obj/item/clothing/accessory/armband/med,
 					/obj/item/device/radio/headset/headset_med)
 	cost = 6
 	containertype = /obj/structure/closet/secure_closet/psychiatry
@@ -249,6 +257,7 @@
 					/obj/item/clothing/gloves/latex,
 					/obj/item/clothing/mask/surgical,
 					/obj/item/weapon/storage/backpack/satchel_vir,
+					/obj/item/clothing/accessory/armband/med,
 					/obj/item/device/radio/headset/headset_med)
 	cost = 7
 	containertype = /obj/structure/closet/secure_closet/virology
@@ -275,6 +284,7 @@
 					/obj/item/weapon/storage/backpack/satchel_med,
 					/obj/item/weapon/storage/backpack/messenger/med,
 					/obj/item/weapon/cartridge/cmo,
+					/obj/item/clothing/accessory/armband/med,
 					/obj/item/device/radio/headset/heads/cmo)
 	cost = 50
 	containertype = /obj/structure/closet/secure_closet/CMO
@@ -286,6 +296,7 @@
 					/obj/item/clothing/suit/storage/toggle/labcoat/chemist,
 					/obj/item/clothing/glasses/science,
 					/obj/item/weapon/storage/backpack/satchel_chem,
+					/obj/item/clothing/accessory/armband/med,
 					/obj/item/device/radio/headset/headset_med)
 	cost = 7
 	containertype = /obj/structure/closet/secure_closet/medical3
@@ -295,6 +306,7 @@
 	name = "Science Intern Equipment"
 	contains = list(/obj/item/clothing/under/rank/scientist,
 					/obj/item/weapon/storage/backpack/messenger/tox,
+					/obj/item/clothing/accessory/armband/whitered,
 					/obj/item/device/radio/headset/headset_sci)
 	cost = 5
 	containertype = /obj/structure/closet/secure_closet/scientist
@@ -307,6 +319,7 @@
 					/obj/item/clothing/suit/storage/hooded/wintercoat/science,
 					/obj/item/clothing/glasses/science,
 					/obj/item/weapon/storage/backpack/messenger/tox,
+					/obj/item/clothing/accessory/armband/whitered,
 					/obj/item/device/radio/headset/headset_sci)
 	cost = 7
 	containertype = /obj/structure/closet/secure_closet/scientist
@@ -318,6 +331,7 @@
 					/obj/item/clothing/suit/storage/toggle/labcoat,
 					/obj/item/weapon/storage/belt/utility/full,
 					/obj/item/device/robotanalyzer,
+					/obj/item/clothing/accessory/armband/whitered,
 					/obj/item/weapon/storage/backpack/messenger/tox,
 					/obj/item/device/radio/headset/headset_sci)
 	cost = 8
@@ -338,6 +352,7 @@
 					/obj/item/taperoll/research,
 					/obj/item/weapon/cartridge/rd,
 					/obj/item/clothing/cloak/rd,
+					/obj/item/clothing/accessory/armband/whitered,
 					/obj/item/weapon/storage/backpack/messenger/tox,
 					/obj/item/device/radio/headset/heads/rd)
 	cost = 50
@@ -394,6 +409,7 @@
 					/obj/item/device/analyzer/plant_analyzer,
 					/obj/item/weapon/storage/plants,
 					/obj/item/weapon/storage/backpack/hydroponics,
+					/obj/item/clothing/accessory/armband/hydro,
 					/obj/item/device/radio/headset/headset_service)
 	cost = 7
 	containertype = /obj/structure/closet/secure_closet/hydroponics

@@ -126,7 +126,7 @@
 
 /decl/hierarchy/supply_pack/medical/medicalscrubs
 	name = "Assorted Medical Scrubs"
-	contains = list(/obj/item/clothing/shoes/white = 16,
+	contains = list(/obj/item/clothing/shoes/white = 12,
 					/obj/item/clothing/under/rank/medical/scrubs/blue = 2,
 					/obj/item/clothing/under/rank/medical/scrubs/green = 2,
 					/obj/item/clothing/under/rank/medical/scrubs/purple = 2,
@@ -146,7 +146,7 @@
 					/obj/item/weapon/storage/box/masks,
 					/obj/item/weapon/storage/box/gloves)
 	cost = 20
-	containertype = /obj/structure/closet/wardrobe/white
+	containertype = /obj/structure/closet/crate/large
 	containername = "\improper Medical scrubs crate"
 
 /decl/hierarchy/supply_pack/medical/autopsy
@@ -165,7 +165,7 @@
 
 /decl/hierarchy/supply_pack/medical/medicaluniforms
 	name = "Professional Medical Uniforms"
-	contains = list(/obj/item/clothing/shoes/white = 11,
+	contains = list(/obj/item/clothing/shoes/white = 10,
 					/obj/item/clothing/under/rank/chemist,
 					/obj/item/clothing/under/rank/virologist,
 					/obj/item/clothing/under/rank/nursesuit,
@@ -176,10 +176,13 @@
 					/obj/item/clothing/suit/storage/toggle/labcoat = 5,
 					/obj/item/clothing/suit/storage/toggle/labcoat/virologist,
 					/obj/item/clothing/suit/storage/toggle/labcoat/chemist,
+					/obj/item/clothing/accessory/armband/med = 3,
+					/obj/item/clothing/accessory/armband/medblue = 3,
+					/obj/item/clothing/accessory/armband/medgreen,
 					/obj/item/weapon/storage/box/masks,
 					/obj/item/weapon/storage/box/gloves)
 	cost = 15
-	containertype = /obj/structure/closet/crate/secure
+	containertype = /obj/structure/closet/crate/large
 	containername = "\improper Medical uniform crate"
 	access = 4
 
