@@ -21,6 +21,15 @@
 	var/glass_desc = "It's a glass of... what, exactly?"
 	var/list/glass_special = null // null equivalent to list()
 
+	// GAS DATA, generic values copied from base XGM datum type.
+	var/gas_specific_heat = 20
+	var/gas_molar_mass =    0.032
+	var/gas_overlay_limit = 0.7
+	var/gas_flags =    		XGM_GAS_REAGENT_GAS
+	var/gas_burn_product
+	var/gas_overlay = "generic"
+	// END GAS DATA
+
 /datum/reagent/New(var/datum/reagents/holder)
 	src.holder = holder
 	..()
@@ -36,6 +45,9 @@
 	return
 
 /datum/reagent/proc/touch_turf(var/turf/T, var/amount) // Cleaner cleaning, lube lubbing, etc, all go here
+	return
+
+/datum/reagent/proc/touch_target(var/mob/M, var/amount, var/bodypart, var/blocked)
 	return
 
 /datum/reagent/proc/on_mob_life(var/mob/living/carbon/M, var/alien, var/location) // Currently, on_mob_life is called on carbons. Any interaction with non-carbon mobs (lube) will need to be done in touch_mob.

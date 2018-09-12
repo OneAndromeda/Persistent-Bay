@@ -5,7 +5,7 @@
 	mouse_drag_pointer = MOUSE_ACTIVE_POINTER
 
 	var/image/blood_overlay = null //this saves our blood splatter overlay, which will be processed not to go over the edges of the sprite
-	var/randpixel = 6
+	var/randpixel = 9
 	var/r_speed = 1.0
 	var/health = null
 	var/burn_point = null
@@ -66,7 +66,7 @@
 	/* Species-specific sprites, concept stolen from Paradise//vg/.
 	ex:
 	sprite_sheets = list(
-		SPECIES_TAJARA = 'icons/cat/are/bad'
+		SPECIES_UNATHI = 'icons/lizard/are/bad'
 		)
 	If index term exists and icon_override is not set, this sprite sheet will be used.
 	*/

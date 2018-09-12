@@ -1,8 +1,10 @@
 /var/global/list/autolathe_recipes
 /var/global/list/autolathe_categories
 
-var/const/EXTRA_COST_FACTOR = 1.25
+var/const/EXTRA_COST_FACTOR = 1
 // Items are more expensive to produce than they are to recycle.
+// Yeah but just make recycling bad
+// Extra cost factor implies you are DELETING steel (1st law of thermodynamics)
 
 /proc/populate_lathe_recipes()
 
@@ -175,18 +177,21 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	path = /obj/item/stack/material/steel
 	category = "General"
 	is_stack = 1
+	resources = list("steel" = SHEET_MATERIAL_AMOUNT * EXTRA_COST_FACTOR)
 
 /datum/autolathe/recipe/glass
 	name = "glass sheets"
 	path = /obj/item/stack/material/glass
 	category = "General"
 	is_stack = 1
+	resources = list("glass" = SHEET_MATERIAL_AMOUNT * EXTRA_COST_FACTOR)
 
 /datum/autolathe/recipe/rglass
 	name = "reinforced glass sheets"
 	path = /obj/item/stack/material/glass/reinforced
 	category = "General"
 	is_stack = 1
+	resources = list("glass" = (SHEET_MATERIAL_AMOUNT/2) * EXTRA_COST_FACTOR, "steel" = (SHEET_MATERIAL_AMOUNT/2) * EXTRA_COST_FACTOR)
 
 /datum/autolathe/recipe/rods
 	name = "metal rods"
@@ -197,6 +202,11 @@ var/const/EXTRA_COST_FACTOR = 1.25
 /datum/autolathe/recipe/knife
 	name = "kitchen knife"
 	path = /obj/item/weapon/material/knife
+	category = "General"
+
+/datum/autolathe/recipe/knife/butch
+	name = "butcher knife"
+	path = /obj/item/weapon/material/knife/butch
 	category = "General"
 
 /datum/autolathe/recipe/taperecorder
@@ -310,6 +320,12 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	hidden = 1
 	category = "Arms and Ammunition"
 
+/datum/autolathe/recipe/shotgun_rubber
+	name = "ammunition (shotgun, rubber)"
+	path = /obj/item/ammo_casing/shotgun/rubber
+	hidden = 1
+	category = "Arms and Ammunition"
+
 /datum/autolathe/recipe/shotgun_flash
 	name = "ammunition (shotgun, flash)"
 	path = /obj/item/ammo_casing/shotgun/flash
@@ -372,7 +388,7 @@ var/const/EXTRA_COST_FACTOR = 1.25
 
 /datum/autolathe/recipe/cable_coil
 	name = "cable coil"
-	path = /obj/item/stack/cable_coil/single
+	path = /obj/item/stack/cable_coil
 	category = "Devices and Components"
 	is_stack = 1
 
@@ -552,7 +568,7 @@ var/const/EXTRA_COST_FACTOR = 1.25
 
 /datum/autolathe/recipe/stasisclamp
 	name = "stasis clamp"
-	path = /obj/machinery/clamp
+	path = /obj/item/clamp
 	category = "Engineering"
 
 /datum/autolathe/recipe/beerkeg
@@ -603,6 +619,11 @@ var/const/EXTRA_COST_FACTOR = 1.25
 /datum/autolathe/recipe/keypad
 	name = "airlock keypad electronics"
 	path = /obj/item/weapon/airlock_electronics/keypad_electronics
+	category = "Engineering"
+
+/datum/autolathe/recipe/business
+	name = "business airlock electronics"
+	path = /obj/item/weapon/airlock_electronics/business
 	category = "Engineering"
 
 /datum/autolathe/recipe/analyzer
